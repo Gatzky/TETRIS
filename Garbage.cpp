@@ -52,7 +52,7 @@ bool Garbage::TestEnd() {
 	bool TestEnd = 0;
 	for (int g = 0; g < VecGarbage.size(); g++) {
 		if ((VecGarbage.at(g).ReturnX() > 4 && VecGarbage.at(g).ReturnX() < 8) && (VecGarbage.at(g).ReturnY() == 1 || VecGarbage.at(g).ReturnY() == 1))	//if anyone block in Garbage Vector lay in "create area"...
-			TestEnd = 1;			//The game is end
+			TestEnd = 1;			//Game Over
 	}
 	return TestEnd;
 }
